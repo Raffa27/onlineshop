@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="sections.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="script.js" defer></script>
+    <style>
+        .legal-section {
+            
+            min-height: 100vh;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10rem 2rem 2rem 4rem;
+            color: #fff;
+        }
+
+        .legal-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 15px;
+        }
+
+        .legal-content h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .legal-content h1::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: orange;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .legal-content h2 {
+            color: orange;
+            font-size: 1.5rem;
+            margin: 2.5rem 0 1rem 0;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .legal-content h3 {
+            color: #fff;
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.5rem 0;
+        }
+
+        .legal-content p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .legal-content ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .legal-content li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .legal-content a {
+            color: orange;
+            text-decoration: none;
+        }
+
+        .legal-content a:hover {
+            text-decoration: underline;
+        }
+
+        .privacy-highlight {
+            background: rgba(255, 165, 0, 0.1);
+            border-left: 3px solid orange;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 5px 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .legal-section {
+                padding: 5rem 1rem 1rem 1rem;
+            }
+
+            .legal-content {
+                padding: 1.5rem;
+            }
+
+            .legal-content h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <title>Datenschutzerklärung - Rafael Banc</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="/index.html">Rafael Banc</a>
+                <i class='bx bx-code-alt'></i>
+            </div>
+            <ul class="links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/impressum.html">Impressum</a></li>
+                <li><a href="/datenschutz.html">Datenschutz</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <span class="material-symbols-outlined">
+                    menu
+                    </span>
+            </div>
+
+            <div class="dropdown_menu">
+                <li><a href="/index.html">Home</a></li>
+                
+                
+                <li><a href="/impressum.html">Datenschutz</a></li>
+                
+            </div>
+        </div>
+    </header>
+
+    <main class="legal-section">
+        <div class="legal-content">
+            <h1>Datenschutzerklärung</h1>
+
+            <div class="privacy-highlight">
+                <p>Stand: Januar 2025<br>
+                Verantwortlicher im Sinne der DSGVO:<br>
+                Rafael Banc<br>
+                Windthorststraße 12<br>
+                57482 Wenden</p>
+            </div>
+
+            <h2>1. Überblick</h2>
+            <p>Diese Datenschutzerklärung informiert Sie über die Art, den Umfang und die Zwecke der Erhebung und Verwendung personenbezogener Daten auf unserer Website.</p>
+
+            <h2>2. Kontaktformular & Kommunikation</h2>
+            <h3>Nutzung von Formspree</h3>
+            <p>Wir nutzen den Dienst Formspree für unser Kontaktformular. Wenn Sie das Formular nutzen, werden folgende Daten übermittelt:</p>
+            <ul>
+                <li>Name</li>
+                <li>E-Mail-Adresse</li>
+                <li>Betreff</li>
+                <li>Nachrichteninhalt</li>
+            </ul>
+            <p>Details zur Datenverarbeitung durch Formspree finden Sie in deren <a href="https://formspree.io/legal/privacy-policy" target="_blank">Datenschutzerklärung</a>.</p>
+
+            <h2>3. Ihre Rechte</h2>
+            <p>Sie haben folgende Rechte bezüglich Ihrer personenbezogenen Daten:</p>
+            <ul>
+                <li>Recht auf Auskunft</li>
+                <li>Recht auf Berichtigung</li>
+                <li>Recht auf Löschung ("Recht auf Vergessenwerden")</li>
+                <li>Recht auf Einschränkung der Verarbeitung</li>
+                <li>Recht auf Datenübertragbarkeit</li>
+                <li>Widerspruchsrecht</li>
+            </ul>
+
+            <h2>4. Speicherdauer</h2>
+            <p>Wir speichern Ihre über das Kontaktformular übermittelten Daten so lange, wie es für die Bearbeitung Ihrer Anfrage erforderlich ist oder Sie die Löschung beantragen.</p>
+
+            <h2>5. Sicherheitsmaßnahmen</h2>
+            <p>Zum Schutz Ihrer personenbezogenen Daten haben wir folgende technische und organisatorische Maßnahmen implementiert:</p>
+            
+            <h3>Sichere Datenübertragung</h3>
+            <p>Die Übermittlung Ihrer Daten aus dem Kontaktformular erfolgt ausschließlich verschlüsselt über HTTPS (SSL/TLS-Verschlüsselung). Dies gewährleistet, dass Ihre Daten während der Übertragung nicht von Dritten eingesehen werden können.</p>
+            
+            <h3>Formular-Verarbeitung</h3>
+            <p>Für die Verarbeitung des Kontaktformulars nutzen wir den spezialisierten Dienst Formspree. Dieser Service:</p>
+            <ul>
+                <li>Verwendet modernste Sicherheitsstandards</li>
+                <li>Ist DSGVO-konform</li>
+                <li>Speichert Daten auf geschützten Servern</li>
+            </ul>
+            
+            <h3>Datenzugriff</h3>
+            <p>Der Zugriff auf Ihre übermittelten Daten ist streng beschränkt und erfolgt nur durch:</p>
+            <ul>
+                <li>Den Website-Betreiber zur Bearbeitung Ihrer Anfrage</li>
+                <li>Den Formular-Dienst Formspree zur technischen Übermittlung</li>
+            </ul>
+            
+            <h3>Löschungsrichtlinien</h3>
+            <p>Ihre Anfragen werden nur so lange gespeichert, wie es für die Bearbeitung notwendig ist oder gesetzliche Aufbewahrungsfristen dies erfordern. Danach werden sie sicher gelöscht.</p>
+            <h2>6. Werbung & Marketing</h2>
+            <p>Wir nutzen Social Media Werbung (Facebook Ads, Instagram Ads). Dabei werden keine personenbezogenen Daten von unserer Website an diese Plattformen übermittelt.</p>
+
+            <h2>7. Änderungen der Datenschutzerklärung</h2>
+            <p>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf unter Beachtung der geltenden Datenschutzvorschriften anzupassen.</p>
+
+            <h2>8. Kontakt</h2>
+            <p>Bei Fragen zum Datenschutz können Sie sich jederzeit an mich wenden:</p>
+            <p>E-Mail: softwarebanc@gmail.com<br>
+            Telefon: +49 176 2258 6788 </p>
+        </div>
+    </main>
+
+
+
+</body>
+</html>

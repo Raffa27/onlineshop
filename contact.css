@@ -1,0 +1,277 @@
+/* Contact Section */
+#contact {
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 6rem 2rem;
+}
+
+.contact-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.contact-content h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: orange;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.info-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-5px);
+}
+
+.info-item i {
+    font-size: 2rem;
+    color: orange;
+    margin-bottom: 1rem;
+}
+
+.info-item h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-item p {
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Form Styles */
+
+/* Autofill Styles überschreiben */
+.form-group input:-webkit-autofill,
+.form-group input:-webkit-autofill:hover,
+.form-group input:-webkit-autofill:focus,
+.form-group textarea:-webkit-autofill,
+.form-group textarea:-webkit-autofill:hover,
+.form-group textarea:-webkit-autofill:focus {
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+    background-color: transparent !important;
+}
+
+/* Zusätzlich für bessere Browser-Kompatibilität */
+.form-group input:autofill,
+.form-group textarea:autofill {
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+    background-color: transparent !important;
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.3s ease all;
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label,
+.form-group textarea:focus ~ label,
+.form-group textarea:valid ~ label {
+    top: -20px;
+    font-size: 0.8rem;
+    color: orange;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom-color: orange;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: orange;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #fff;
+    color: orange;
+}
+
+.submit-btn:disabled {
+    background-color: #808080; 
+    opacity: 0.6;             
+    cursor: not-allowed;      
+    transform: none;         
+}
+
+.submit-btn:disabled:hover {
+    background-color: #808080;
+    color: #fff;
+    transform: none;
+    scale: 1;                
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-form {
+        order: -1;
+    }
+}
+
+/* Neue Styles für die Datenschutz-Checkbox */
+.form-group.privacy-check label {
+    position: static;  
+    color: #fff !important; 
+    font-size: 0.9rem !important; 
+    transform: none; 
+    transition: none; 
+    padding: 0;
+    pointer-events: auto; 
+    white-space: normal; 
+}
+
+.form-group.privacy-check input[type="checkbox"] {
+    width: auto;
+    margin-top: 4px; /* Für bessere vertikale Ausrichtung mit dem Text */
+}
+
+.form-group.privacy-check label {
+    all: unset; /* Setzt alle vererbten Styles zurück */
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: default; /* Normaler Cursor für Text */
+    flex: 1; /* Erlaubt dem Text zu wrappen */
+}
+
+.form-group.privacy-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 2rem;
+    background: transparent;
+}
+
+.form-group.privacy-check input[type="checkbox"] {
+    width: 16px; /* Definierte Größe */
+    height: 16px;
+    margin-top: 3px; /* Für vertikale Ausrichtung mit dem Text */
+    cursor: pointer; /* Zeigt an, dass nur die Box klickbar ist */
+}
+
+.form-group.privacy-check a {
+    color: orange;
+    text-decoration: underline;
+    pointer-events: auto; /* Erlaubt Klicks auf den Link */
+}
+
+.form-group.privacy-check a:hover {
+    color: #fff;
+}
+
+.success-message {
+    text-align: center;
+    padding: 2rem;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.success-message.show {
+    opacity: 1;
+}
+
+.success-message i {
+    font-size: 4rem;
+    color: orange;
+    margin-bottom: 1rem;
+}
+
+.success-message h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.success-message p {
+    font-size: 1rem;
+    color: #fff;
+}

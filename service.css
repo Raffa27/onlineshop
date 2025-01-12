@@ -1,0 +1,195 @@
+/* Services Section */
+#services {
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 6rem 2rem;
+}
+
+.services-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-content h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.services-content h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: orange;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.pricing-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card.featured {
+    border: 2px solid orange;
+    transform: scale(1.05);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: orange;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.package-name {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.price {
+    margin: 1.5rem 0;
+}
+
+.price .amount {
+    color: orange;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.price .currency {
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.features li {
+    color: #fff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.features li i {
+    color: orange;
+    font-size: 1.2rem;
+}
+
+.pricing-button {
+    display: inline-block;
+    background: orange;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.pricing-button:hover {
+    background: #fff;
+    color: orange;
+    transform: scale(1.05);
+}
+
+/* Custom Solutions Card Styles */
+.pricing-card.custom {
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.pricing-card.custom .custom-price {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: orange
+}
+
+.pricing-card.custom .pricing-button {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.pricing-card.custom .pricing-button:hover {
+    background: orange;
+    color: #fff;
+}
+
+.service-disclaimer {
+    text-align: center;
+    max-width: 800px;
+    margin: 2rem auto 0;
+    padding: 1rem;
+}
+
+.service-disclaimer p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Responsive Grid Anpassung */
+@media (min-width: 1200px) {
+    .pricing-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pricing-container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .pricing-card.featured {
+        transform: none;
+    }
+    
+    .pricing-card.featured:hover {
+        transform: translateY(-10px);
+    }
+}
