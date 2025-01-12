@@ -71,6 +71,7 @@
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: bold;
+    z-index: 1000;
 }
 
 .product-image {
