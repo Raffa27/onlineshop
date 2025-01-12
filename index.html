@@ -8,9 +8,10 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="sections.css">
     <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="contact.css">
     <script src="script.js" defer></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=EUR"></script>
     <title>Banc-Software & IT</title>
 </head>
 <body>
@@ -77,154 +78,18 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-<section id="services">
-    <div class="services-content">
-        <h2>Meine Services *</h2>
-        <div class="pricing-container">
-            <!-- Basic Package -->
-            <div class="pricing-card">
-                <div class="package-name">Basic</div>
-                <div class="price">
-                    <span class="amount">250</span>
-                    <span class="currency">€</span>
-                </div>
-                <ul class="features">
-                    <li>
-                        <i class='bx bx-check'></i>
-                        Singlepage Webpräsenz (3 Sections)
-                    </li>
-                    <li>
-                        <i class='bx bx-check'></i>
-                        Deployment auf Ihren Hostinganbieter
-                    </li>
-                    <li>
-                        <i class='bx bx-check'></i>
-                        14 Tage Korrektur-Garantie
-                    </li>
-                    <li>
-                        <i class='bx bx-check'></i>
-                        Mobile-First Design
-                    </li>
-                </ul>
-                <a href="#contact" class="pricing-button">Jetzt starten</a>
+    <section id="product" class="product-section">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="parfum.png" alt="Luxury Parfum" loading="lazy">
             </div>
-
-            <!-- Professional Package -->
-            <div class="pricing-card featured">
-                <div class="popular-badge">Beliebt</div>
-                <div class="package-name">Professional</div>
-                <div class="price">
-                    <span class="amount">450</span>
-                    <span class="currency">€</span>
-                </div>
-                <ul class="features">
-                    <li>
-                        <i class='bx bx-check'></i>
-                        Alles aus Basic
-                    </li>
-                    <li>
-                        <i class='bx bx-check'></i>
-                        Bis zu 5 Sections
-                    </li>
-                    <li>
-                        <i class='bx bx-check'></i>
-                        SEO Optimierung
-                    </li>
-                    <li>
-                        <i class='bx bx-check'></i>
-                        30 Tage Korrektur-Garantie
-                    </li>
-                    <li>
-                        <i class='bx bx-check'></i>
-                        Kontaktformular Integration
-                    </li>
-                    <li>
-                        <i class='bx bx-check'></i>
-                        Google Analytics Setup
-                    </li>
-                </ul>
-                <a href="#contact" class="pricing-button">Jetzt starten</a>
-            </div>
-
-            <!-- Premium Package -->
-            <div class="pricing-card">
-                <div class="package-name">Premium</div>
-                <div class="price">
-                    <span class="amount">750</span>
-                    <span class="currency">€</span>
-                </div>
-                <ul class="features">
-                    <li>
-                        <i class='bx bx-check'></i>
-                        Alles aus Professional
-                    </li>
-                    <li>
-                        <i class='bx bx-check'></i>
-                        Unbegrenzte Sections
-                    </li>
-                    <li>
-                        <i class='bx bx-check'></i>
-                        Premium Hosting (1 Jahr)
-                    </li>
-                    <li>
-                        <i class='bx bx-check'></i>
-                        Domain Setup & SSL
-                    </li>
-                    <li>
-                        <i class='bx bx-check'></i>
-                        6 Monate Wartung inkl.
-                    </li>
-                    <li>
-                        <i class='bx bx-check'></i>
-                        Content Management System
-                    </li>
-                </ul>
-                <a href="#contact" class="pricing-button">Jetzt starten</a>
-            </div>
-            <!-- Custom Solutions Package -->
-<div class="pricing-card custom">
-    <div class="package-name">Custom Solutions</div>
-    <div class="price">
-        <span class="custom-price">Preis auf Anfrage</span>
-    </div>
-    <ul class="features">
-        <li>
-            <i class='bx bx-check'></i>
-            Deployment & Hosting Setup
-        </li>
-        <li>
-            <i class='bx bx-check'></i>
-            Erweiterte SEO-Optimierung
-        </li>
-        <li>
-            <i class='bx bx-check'></i>
-            Individuelle Programmierung
-        </li>
-        <li>
-            <i class='bx bx-check'></i>
-            Wartung bestehender Websites
-        </li>
-        <li>
-            <i class='bx bx-check'></i>
-            Shop-System Integration
-        </li>
-        <li>
-            <i class='bx bx-check'></i>
-            Maßgeschneiderte Lösungen
-        </li>
-    </ul>
-    <a href="#contact" class="pricing-button">Anfrage senden</a>
-</div>
-
+            <h2 class="product-title">Elegance Parfum</h2>
+            <p class="product-description">Ein zeitloser Duft, der Eleganz und Raffinesse vereint. Kopfnoten von Bergamotte und Jasmin, abgerundet mit einem Hauch von Vanille.</p>
+            <div class="product-price">€89.99</div>
+            <button class="buy-button" id="buyButton">Jetzt Kaufen</button>
+            <div id="paypal-button-container" class="paypal-button-container"></div>
         </div>
-    </div>
-    <div class="service-disclaimer">
-        <p>* Alle dargestellten Leistungen sind unverbindlich und stellen kein bindendes Angebot dar. 
-        Ein Vertrag kommt erst durch die Annahme eines individuellen Angebots zustande. 
-        Die Erstellung eines Angebots erfolgt vorbehaltlich verfügbarer Kapazitäten und technischer Machbarkeit.</p>
-    </div>
-</section>
+    </section>
 
 
 
