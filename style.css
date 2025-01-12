@@ -110,6 +110,9 @@ transition: scale 0.2 ease;
 
 .dropdown_menu.open {
     height: 240px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
    
 }
 

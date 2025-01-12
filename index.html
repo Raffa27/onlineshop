@@ -12,21 +12,20 @@
     <link rel="stylesheet" href="contact.css">
     <script src="script.js" defer></script>
     <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=EUR"></script>
-    <title>Banc-Software & IT</title>
+    <title>Dein Onlineshop</title>
 </head>
 <body>
     <header>
         <div class="navbar">
-            <div class="logo"><a href="#home">Rafael Banc</a>
+            <div class="logo"><a href="#home"></a>
                 <i class='bx bx-code-alt'></i>
             </div>
             <ul class="links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="/impressum.html">Impressum</a></li>
-                <li><a href="/datenschutz.html">Datenschutz</a></li>
+                <li><a href="/impressum.html">Rechtliches</a></li>
+                
             </ul>
             <a href="#contact" class="action_btn">Get Started</a>
             <div class="toggle_btn">
@@ -37,57 +36,140 @@
 
             <div class="dropdown_menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="/impressum.html">Impressum</a></li>
-                <li><a href="/datenschutz.html">Datenschutz</a></li>
-                <li><a href="#contact" class="action_btn">Get Started</a></li>
+                <li><a href="/impressum.html">Rechtliches</a></li>
             </div>
         </div>
     </header>
 
     <section id="home">
         <div class="hero-content">
-            <h1>Digitale Lösungen für Ihre <span class="highlight">Vision</span></h1>
-            <p>Spezialisiert auf die Entwicklung moderner und performanter Webpräsenzen. Von der ersten Idee bis zur finalen Umsetzung - ich schaffe maßgeschneiderte digitale Erlebnisse, die Ihr Unternehmen optimal im Internet repräsentieren.</p>
-            <a href="#contact" class="action_btn">Projekt starten</a>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="about-content">
-            <h2>Expertise & Skills</h2>
-            <div class="skills-container">
-                <div class="skill-card">
-                    <i class='bx bx-code-alt'></i>
-                    <h3>Web Development</h3>
-                    <p>Modern und responsive Webentwicklung mit HTML, CSS und JavaScript</p>
+            <div class="hero-text">
+                <span class="hero-badge">Limitierte Edition</span>
+                <h1 class="hero-title">Elegance Parfum<br><span class="highlight">Collection</span></h1>
+                <p class="hero-subtitle">Entdecken Sie unsere exklusive Kollektion handgefertigter Parfums, die Eleganz und Raffinesse in jedem Detail verkörpern.</p>
+                
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class='bx bx-check-circle'></i>
+                        <span>100% Natürlich</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class='bx bx-package'></i>
+                        <span>Kostenloser Versand</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class='bx bx-refresh'></i>
+                        <span>30 Tage Rückgabe</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class='bx bx-mobile-alt'></i>
-                    <h3>Mobile First</h3>
-                    <p>Optimierte Darstellung auf allen Geräten</p>
+                
+                <div class="cta-container">
+                    <a href="#product" class="cta-primary">Jetzt Entdecken</a>
+                    <a href="#about" class="cta-secondary">
+                        <i class='bx bx-play-circle'></i>
+                        Mehr erfahren
+                    </a>
                 </div>
-                <div class="skill-card">
-                    <i class='bx bx-search-alt'></i>
-                    <h3>SEO</h3>
-                    <p>Optimierung für Suchmaschinen und bessere Sichtbarkeit</p>
+            </div>
+            
+            <div class="hero-image">
+                <img src="parfum.png" alt="Elegance Parfum Presentation" loading="lazy">
+                <div class="floating-card top">
+                    <i class='bx bx-star'></i>
+                    <div>
+                        <strong>Bestseller</strong>
+                        <p>Über 1000+ verkauft</p>
+                    </div>
+                </div>
+                <div class="floating-card bottom">
+                    <i class='bx bx-heart'></i>
+                    <div>
+                        <strong>Kundenliebling</strong>
+                        <p>4.9/5 Bewertung</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="product" class="product-section">
-        <div class="product-card">
-            <div class="product-image">
-                <img src="parfum.png" alt="Luxury Parfum" loading="lazy">
+        <div class="product-container">
+            <h2 class="section-title">Unsere Kollektion</h2>
+            <div class="products-grid">
+                <!-- Produkt 1 -->
+                <div class="product-card">
+                    <span class="product-badge">Bestseller</span>
+                    <div class="product-image">
+                        <img src="parfum1.png" alt="Royal Oud Parfum" loading="lazy">
+                    </div>
+                    <h2 class="product-title">Royal Oud</h2>
+                    <p class="product-description">Orientalischer Duft mit edlem Oud-Holz, Sandelholz und einem Hauch von Vanille. Königliche Eleganz in jedem Tropfen.</p>
+                    <div class="product-features">
+                        <span class="feature">
+                            <i class='bx bx-time'></i>
+                            24h Haltbarkeit
+                        </span>
+                        <span class="feature">
+                            <i class='bx bx-medal'></i>
+                            Premium
+                        </span>
+                    </div>
+                    <div class="product-price">
+                        <span class="original-price">€129.99</span>
+                        €99.99
+                    </div>
+                    <button class="buy-button" id="buyButton1">Jetzt Kaufen</button>
+                    <div id="paypal-button-container1" class="paypal-button-container"></div>
+                </div>
+    
+                <!-- Produkt 2 -->
+                <div class="product-card">
+                    <span class="product-badge">Neu</span>
+                    <div class="product-image">
+                        <img src="parfum2.png" alt="Ocean Breeze Parfum" loading="lazy">
+                    </div>
+                    <h2 class="product-title">Ocean Breeze</h2>
+                    <p class="product-description">Frischer Duft mit Meeresbrise, Zitrusnoten und einem Hauch von Jasmin. Wie ein Tag am Meer.</p>
+                    <div class="product-features">
+                        <span class="feature">
+                            <i class='bx bx-droplet'></i>
+                            Frisch
+                        </span>
+                        <span class="feature">
+                            <i class='bx bx-sun'></i>
+                            Sommerlich
+                        </span>
+                    </div>
+                    <div class="product-price">€79.99</div>
+                    <button class="buy-button" id="buyButton2">Jetzt Kaufen</button>
+                    <div id="paypal-button-container2" class="paypal-button-container"></div>
+                </div>
+    
+                <!-- Produkt 3 -->
+                <div class="product-card">
+                    <span class="product-badge">Limited</span>
+                    <div class="product-image">
+                        <img src="parfum3.png" alt="Black Orchid Parfum" loading="lazy">
+                    </div>
+                    <h2 class="product-title">Black Orchid</h2>
+                    <p class="product-description">Mysteriöser Duft mit schwarzer Orchidee, Patschuli und dunkler Schokolade. Für besondere Momente.</p>
+                    <div class="product-features">
+                        <span class="feature">
+                            <i class='bx bx-star'></i>
+                            Exklusiv
+                        </span>
+                        <span class="feature">
+                            <i class='bx bx-moon'></i>
+                            Intensiv
+                        </span>
+                    </div>
+                    <div class="product-price">€119.99</div>
+                    <button class="buy-button" id="buyButton3">Jetzt Kaufen</button>
+                    <div id="paypal-button-container3" class="paypal-button-container"></div>
+                </div>
             </div>
-            <h2 class="product-title">Elegance Parfum</h2>
-            <p class="product-description">Ein zeitloser Duft, der Eleganz und Raffinesse vereint. Kopfnoten von Bergamotte und Jasmin, abgerundet mit einem Hauch von Vanille.</p>
-            <div class="product-price">€89.99</div>
-            <button class="buy-button" id="buyButton">Jetzt Kaufen</button>
-            <div id="paypal-button-container" class="paypal-button-container"></div>
         </div>
     </section>
 
@@ -173,8 +255,8 @@
             
             <div class="footer-section contact">
                 <h3>Kontakt</h3>
-                <p>Email: softwarebanc@gmail.com</p>
-                <p>Tel: +49 176 2258 6788</p>
+                <p>Email: online-shop@mail.com</p>
+                <p>Tel: +49 123 4567 8910</p>
                 <div class="social-links">
                     <a href="#"><i class='bx bxl-facebook'></i></a>
                     <a href="#"><i class='bx bxl-instagram'></i></a>
@@ -185,7 +267,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 Rafael Banc. Alle Rechte vorbehalten.</p>
+            <p>&copy; 2025 Max Mustermann. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
    
